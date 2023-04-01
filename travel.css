@@ -1,0 +1,114 @@
+/* CSS variables part start */
+:root {
+    --font_poppins: 'Poppins', sans-serif;
+    --font_nunito: 'Nunito Sans', sans-serif;
+    --dark_green: #007F5F;
+    --white: #FFFFFF;
+    --orange: #FF8B00;
+    --ah_balck: #292929;
+    --ap_black: #6A6A6A;
+    
+}
+/* CSS variables part end */
+/* Common CSS part start */
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+p,
+a,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+.agreenb{
+    color: var(--dark_green);
+}
+.common_heading{
+    text-align: center;
+    margin: 0 auto;
+}
+.common_heading h2{
+    color: var(--ah_balck);
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--font_poppins);
+}
+.common_heading p{
+    color: var(--ap_black);
+    font-weight: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: var(--font_poppins);
+    width: 690px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/* Common CSS part end */
+/* Travel part start */
+#travel{}
+.travel_items{
+    padding: 63px 61px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    width: fit-content;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.travel_items:hover {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 11px -6px rgba(0,0,0,0.75);
+}
+.travel_icon img{
+    padding: 18px 24px;
+    background:rgba(0, 127, 95, 0.1);
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+.travel_items h3{
+    color: var(--ah_balck);
+    font-size: 25px;
+    font-weight: 500;
+    font-family: var(--font_poppins);
+    margin: 40px 0 20px;
+}
+.travel_items p{
+    color: var(--ap_black);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: var(--font_poppins);
+}
+/* Travel part end */

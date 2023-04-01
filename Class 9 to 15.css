@@ -1,0 +1,107 @@
+/* CSS variables start */
+:root{
+    --blue_color: #0872b9;
+    --blue_color_hover: #5bc5f4;
+    --white_color: #ffffff;
+    --gray-white_color: #f1f1f1;
+    --ah_black_color: black;
+    --ap_black_color: #353535;
+    --opensens: 'Open Sans', sans-serif;
+    --oswald: 'Oswald', sans-serif;
+}
+/* CSS variables end */
+/* Common CSS start */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul, ol, li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.section_heading{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 46px;
+}
+.section_heading h2{
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: var(--oswald);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.section_heading h2::before{
+    content: "";
+    background: url(../Images/PSD-9/ab-shape.png);
+    width: 65px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+/* Common CSS end */
+/* Our portfolio start */
+#portfolio{}
+.portfolio_main{}
+.portfolio_main .port_item{
+    width: 220px;
+    background: red;
+}
+.portfolio_main .port_item .inner_item{
+    position: relative;
+}
+.portfolio_main .port_item .inner_item .overlay{
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all linear .3s;
+    /* opacity: 0;
+    visibility: hidden; */
+}
+.portfolio_main .port_item .inner_item:hover{
+    cursor: pointer;
+    
+}
+.portfolio_main .port_item .inner_item:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+.portfolio_main .port_item .inner_item .overlay a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--blue_color_hover);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white_color);
+}
+/* Our portfolio end */
+/* Our portfolio start */

@@ -1,0 +1,124 @@
+/* CSS variables part start */
+:root {
+    --font_poppins: 'Poppins', sans-serif;
+    --font_nunito: 'Nunito Sans', sans-serif;
+    --dark_green: #007F5F;
+    --white: #FFFFFF;
+    --gray_white: #E0E0E0;
+    --orange: #FF8B00;
+    --ah_balck: #292929;
+    --ap_black: #6A6A6A;
+    
+}
+/* CSS variables part end */
+/* Common CSS part start */
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+p,
+a,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.agreenb{
+    color: var(--dark_green);
+}
+.common_heading{
+    text-align: center;
+    margin: 0 auto;
+}
+.common_heading h2{
+    color: var(--ah_balck);
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--font_poppins);
+}
+.common_heading p{
+    color: var(--ap_black);
+    font-weight: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: var(--font_poppins);
+    width: 690px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/* Common CSS part end */
+/* Popular part start */
+#popular{}
+.slide_item{
+    padding: 20px 20px 42px;
+    /* border: 1px solid; */
+}
+.slide_item ul{
+    display: flex;
+    gap: 6px;
+    margin: 37px 0 17px;
+}
+.slide_item ul li{
+    color: var(--gray_white);
+}
+.slide_item ul li p{
+    color: var(--ah_balck);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_poppins);
+}
+.slide_img{
+    /* width: 329px; */
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    overflow: hidden;
+}
+.slide_item .para{
+    /* width: 325px; */
+    color: var(--ah_balck);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_poppins);
+    margin: 20px 0;
+}
+.slide_btn a{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font_poppins);
+    background: var(--dark_green);
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    padding: 10px 35px;
+    margin-top: 40px;
+}
+/* Popular part end */
