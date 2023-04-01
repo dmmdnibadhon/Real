@@ -44,6 +44,34 @@ ol,
 li {
     list-style: none;
 }
+.all_common_part{
+    text-align: center;
+}
+.all_common_part h3{
+    color: var(--red_color);
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: var(--jost_font);
+}
+.all_common_part h2{
+    color: var(--allh_black_color);
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 500;
+    font-family: var(--jost_font);
+    margin: 10px 0 22px 0;
+}
+.all_common_part p{
+    color: var(--allp_black_color);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: var(--open_sens_font);
+}
+.all_common_part p span{
+    display: block;
+}
 /* Common CSS part end */
 /* Nav bar part start */
 .main_manu{
@@ -159,6 +187,41 @@ li {
     border-radius: 25px;
     background: var(--red_color);
     margin-top: 43px;
+    position: relative;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    overflow: hidden;
+}
+.banner_info .banner_btn a:hover{
+    color: var(--allh_black_color);
+    background: transparent;
+}
+.banner_info .banner_btn a::after{
+    content: "";
+    width: 100%;
+    height: 0%;
+    background: var(--red_color);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    z-index: -2;
+}
+.banner_info .banner_btn a:hover:after{
+    height: 100%;
+    z-index: -2;
 }
 .banner_info .banner_btn .links a{
     
@@ -240,3 +303,126 @@ li {
 }
 } */
 /* Banner part end */
+/* pha = pixel, high and awesome part start */
+#pha{
+    padding: 190px 0 70px;
+    text-align: center;
+}
+.pha_items{}
+.pha_items .pha_img{}
+.pha_items .pha_img img{
+    width: 125px;
+}
+.pha_items .pha_text{}
+.pha_items .pha_text h4{
+    color: var(--allh_black_color);
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 500;
+    font-family: var(--jost_font);
+    margin: 28px 0 21px 0;
+}
+.pha_items .pha_text p{
+    color: var(--allp_black_color);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: var(--open_sens_font);
+}
+/* pha = pixel, high and awesome part end */
+/* Designer part start */
+#designer{
+    padding: 70px 0 22px;
+}
+.designer_info{}
+.designer_info h3{
+    color: var(--red_color);
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: var(--jost_font);
+}
+.designer_info h2{
+    color: var(--allh_black_color);
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 500;
+    font-family: var(--jost_font);
+}
+.designer_info p{
+    color: var(--allp_black_color);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: var(--open_sens_font);
+    margin: 24px 0 50px 0;
+}
+.designer_info .designer_btn a{
+    color: var(--white_color);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--jost_font);
+    padding: 14px 52px;
+    border: 2px solid var(--red_color);
+    border-radius: 25px;
+    background: var(--red_color);
+}
+/* Designer part end */
+/* Portfolio or filter part start */
+#portfolio{}
+.filter_plugin img{
+    width: 423px;
+}
+/* Portfolio or filter part end */
+/* Service part start */
+#service{
+    /* margin: 178px 0 86px 0; */
+}
+.service_items{
+    /* width: 645px; */
+    /* padding-top: 86px; */
+}
+.service_items h4{
+    color: var(--allh_black_color);
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 500;
+    font-family: var(--jost_font);
+}
+.service_items h5{
+    color: var(--allh_black_color);
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: var(--jost_font);
+}
+.service_items h5 span{
+    color: var(--red_color);
+}
+.service_items p{
+    color: var(--allp_black_color);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: var(--open_sens_font);
+}
+/* Service part end */
+/* Testimonial part start */
+
+/* Testimonial part end */
+
+
+/* Blog part start */
+.all_common_part h2 span{
+    display: block;
+}
+/* Blog part end */
+
+/* Testimonial part start */
+/* Testimonial part end */
+
+/* Testimonial part start */
+/* Testimonial part end */
+
+/* Testimonial part start */
+/* Testimonial part end */

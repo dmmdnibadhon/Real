@@ -1,0 +1,1 @@
+var mixer = mixitup('.filter_plugin');
